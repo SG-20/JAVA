@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args){
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for(int i=0;i<=10;i++){
+            list.add(Integer.valueOf(i));
+            //AutoBoxing: primitive int -> object Integer wrapper class
+        }
+
+
+        for(int i=0; i<list.size(); i++){
+            System.out.println(list.get(i).intValue());
+            //UnBoxing: object Integer wrapper class -> primitive int
+        }
+
+
+        Integer myIntValue=56; //Integer.valueOf(56);  //autoboxing
+        int myInt = myIntValue; //myIntValue.intValue();  //unboxing
+
+    }
+}
